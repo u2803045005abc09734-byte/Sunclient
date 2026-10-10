@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "sunclient",
+  "version": "${version}",
+  "name": "Sun Client",
+  "description": "Client-Mod im Stil des Lunar Clients: verschiebbares HUD, Keystrokes, CPS, Zoom, Toggle Sprint, Freelook, Modrinth-Resource-Pack-Downloader.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["de.sunclient.SunClient"]
+  },
+  "mixins": ["sunclient.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
